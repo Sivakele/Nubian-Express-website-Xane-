@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products - Nubian Express</title>
+
+
 </head>
 <body>
+
       <p>
              <img src="images/Logo colour.jpeg"  
                  alt="Nubian express logo"
                  width="120">
         </p>
+    <h1>Our Products</h1>
+<p>Browse our range of custom uniforms and kits, available for bulk order with your choice of size and branding.</p>    
 <hr>
 
 
@@ -24,7 +29,6 @@
                  width="120">
         </p>
 <p> Pink Soccer Kit </p>
-<p> R450.00ea </p>
 <label for="size">Select Size:</label>
 <select id="size" name="size">
     <option value="">-- Choose a size --</option>
@@ -35,7 +39,18 @@
     <option value="XL">XL</option>
     <option value="XXL">XXL</option>
 </select>
-<p> Minimum order quantity: 15 </p>
+
+<label for="colour">Select Colour:</label>
+<select id="colour" name="colour">
+    <option value="">-- Choose a colour --</option>
+    <option value="pink">Pink</option>
+    <option value="red">Red</option>
+    <option value="black">Black</option>
+    <option value="white">White</option>    
+    <option value="blue">blue</option>
+</select>
+<label for="quantity">Quantity:</label>
+<input type="number" id="quantity" name="quantity" min="15" value="15">
 
 
    <button type="submit">
@@ -66,7 +81,19 @@
     <option value="XL">XL</option>
     <option value="XXL">XXL</option>
 </select>
-<p> Minimum order quantity: 15 </p>
+
+ <label for="colour">Select Colour:</label>
+<select id="colour" name="colour">
+    <option value="">-- Choose a colour --</option>
+    <option value="pink">Pink</option>
+    <option value="red">Red</option>
+    <option value="black">Black</option>
+    <option value="white">White</option>    
+    <option value="blue">blue</option>
+</select>   
+
+<label for="quantity">Quantity:</label>
+<input type="number" id="quantity" name="quantity" min="15" value="15">
 
    <button type="submit">
                         Add to Cart
@@ -91,14 +118,30 @@
     <option value="XL">XL</option>
     <option value="XXL">XXL</option>
 </select>
-<p> Minimum order quantity: 5 </p>
+
+ <label for="colour">Select Colour:</label>
+<select id="colour" name="colour">
+    <option value="">-- Choose a colour --</option>
+    <option value="pink">Pink</option>
+    <option value="red">Red</option>
+    <option value="black">Black</option>
+    <option value="white">White</option>    
+    <option value="blue">blue</option>
+</select>
+
+<label for="quantity">Quantity:</label>
+<input type="number" id="quantity" name="quantity" min="5" value="5">
 
    <button type="submit">
                         Add to Cart
                     </button>
 
 
-
+<section class="custom-cta">
+    <h2>Need something custom?</h2>
+    <p>Contact us for bespoke colours, branding, and bulk pricing tailored to your organisation.</p>
+    <a href="contact.html" class="cta-btn">Request a Custom Quote</a>
+</section>
 
 
 
