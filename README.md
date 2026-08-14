@@ -26,9 +26,10 @@ sitemap( hierarchy)
 -See part 4 of proposal
 
 References
-https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fwww.infinityimpressions.com%2F&ved=0CBkQjhxqFwoTCID546n6n5YDFQAAAAAdAAAAABA4&opi=89978449 access date- 14/08/2026
+Reference List
+Infinity Impressions (n.d.) Infinity Impressions: Custom Screen Printing, Embroidery & Promotional Products. Available at: https://www.infinityimpressions.com/ (Accessed: 14 August 2026).
 
-https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fworldwidetradex.com%2Fes%2Fsupply%2Fdigital-printing&ved=0CBkQjhxqFwoTCKjFtOL6n5YDFQAAAAAdAAAAABA3&opi=89978449 access date 14/08/2026
+VectorPortal (n.d.) Soccer jersey vector template.eps. Available at: https://vectorportal.com/vector/soccer-jersey-vector-template.eps/4988 (Accessed: 14 August 2026).
 
-https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fvectorportal.com%2Fvector%2Fsoccer-jersey-vector-template.eps%2F4988&ved=0CBkQjhxqFwoTCNDpu5v7n5YDFQAAAAAdAAAAABA4&opi=89978449 access date 14/08/2026
+WorldwideTradeX (n.d.) Digital Printing Supply. Available at: https://worldwidetradex.com/es/supply/digital-printing (Accessed: 14 August 2026).
 
