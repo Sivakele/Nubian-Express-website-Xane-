@@ -1,71 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-<header>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mission & Vision - Nubian Express</title>
- 
-
-        <p>
-             <img src="images/Logo colour.jpeg"  
-                 alt="Nubian express logo"
-                 width="120">
-        </p>
-
-     
-
-    </header>
+    <title>About - Nubian Express</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
 <body>
 
-    <section class="intro">
-    <h1>About Nubian Express</h1>
-    <p>Nubian Express was founded by Xitlhangu Khoza, a young entrepreneur determined to bring quality, reliability, and opportunity to South Africa's uniform manufacturing industry.</p>
-</section>
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a href="index.html" class="site-header__logo">
+                <img src="images/Logo colour.jpeg" alt="Nubian Express logo" width="120" height="120">
+                Nubian Express
+            </a>
 
+            <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+                <span class="sr-only">Menu</span>
+            </button>
 
-    <h1>Mission</h1>
-    <p>To provide businesses, organisations, schools and teams with high quality uniforms and professional branding solutions that strengthen their identity, improve their presentation and help them stand out.</p>
-    <p>We are committed to delivering quality products, reliable service, creative solutions and professional customer experiences. All of this while building long lasting relationships with every client we serve.</p>
-    <p>We do not just brand clothing. We help businesses build an identity they can be proud of.</p>
+            <nav class="site-nav" id="site-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" aria-current="page">About</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <h1>Vision</h1>
-    <p>To become one of South Africa's most trusted and recognised uniform and branding solutions companies. Nubian Express will be known for quality, innovation, reliability and exceptional service.</p>
-    <p>We envision a Nubian Express that grows from a small local business into a powerful national brand, creating opportunities for employees, entrepreneurs and communities while helping thousands of businesses and organisations present themselves with confidence.</p>
-    <p>From one uniform to an entire brand, Nubian Express will be the service provider to trust.</p>
-   
-    <h2>Our Values</h2>
-<ul>
-    <li><strong>Quality</strong> — Every uniform is made with care and attention to detail.</li>
-    <li><strong>Reliability</strong> — We deliver on our promises, on time.</li>
-    <li><strong>Integrity</strong> — Honest, fair service to every client.</li>
-    <li><strong>Community</strong> — Creating opportunities and jobs locally.</li>
-</ul>
-</body>
+    <main>
 
-   <footer>
-<section class="cta">
-    <h2>Ready to work with us?</h2>
-    <p>Get in touch today and let's bring your uniform vision to life.</p>
-    <a href="contact.html" class="cta-btn">Contact Us</a>
-</section>
-        <p>
-            <strong>VVV</strong>
-        </p>
-        <hr>
+        <section class="page-intro">
+            <h1>About Nubian Express</h1>
+            <p class="lead">Nubian Express was founded by Xitlhangu Khoza, a young entrepreneur determined to address South Africa's persistent unemployment crisis by building a uniform manufacturer that could compete on quality while creating real opportunity.</p>
+        </section>
 
-        <p>
-            &copy; 2026 VVV
-            &nbsp; | &nbsp;
-            All Rights Reserved
-        </p>
+        <section class="section">
+            <h2>Our Story</h2>
+            <p>Before starting the company, Xitlhangu worked in a sweatshop-style manufacturing environment &mdash; an experience that gave him first-hand insight into the uniform manufacturing industry, its inefficiencies, and the gap in the market for a manufacturer that combines quality, reliability, and fair practice.</p>
+            <p>Drawing on that experience, he identified an opportunity to build a business that could both compete on quality and create meaningful employment in local communities. That vision became Nubian Express &mdash; a company built to manufacture high-quality uniforms for schools and corporations while creating jobs and opportunity where it operates.</p>
+        </section>
 
+        <div class="grid grid--two">
+
+            <section class="section">
+                <h2>Mission</h2>
+                <p>To provide businesses, organisations, schools and teams with high quality uniforms and professional branding solutions that strengthen their identity, improve their presentation and help them stand out.</p>
+                <p>We are committed to delivering quality products, reliable service, creative solutions and professional customer experiences, all while building long-lasting relationships with every client we serve. We do not just brand clothing &mdash; we help businesses build an identity they can be proud of.</p>
+            </section>
+
+            <section class="section">
+                <h2>Vision</h2>
+                <p>To become one of South Africa's most trusted and recognised uniform and branding solutions companies. Nubian Express will be known for quality, innovation, reliability and exceptional service.</p>
+                <p>We envision Nubian Express growing from a small local business into a powerful national brand, creating opportunities for employees, entrepreneurs and communities, while helping thousands of businesses present themselves with confidence.</p>
+            </section>
+
+        </div>
+
+        <section class="section">
+            <h2>Our Values</h2>
+            <ul class="list-columns">
+                <li><strong>Quality</strong> &mdash; Every uniform is made with care and attention to detail.</li>
+                <li><strong>Reliability</strong> &mdash; We deliver on our promises, on time.</li>
+                <li><strong>Integrity</strong> &mdash; Honest, fair service to every client.</li>
+                <li><strong>Community</strong> &mdash; Creating opportunities and jobs locally.</li>
+            </ul>
+            <p class="statement"><strong>From one uniform to an entire brand, Nubian Express will be the service provider to trust.</strong></p>
+        </section>
+
+        <section class="cta">
+            <div>
+                <h2>Ready to work with us?</h2>
+                <p>Get in touch today and let's bring your uniform vision to life.</p>
+            </div>
+            <a href="contact.html" class="btn btn--accent">Contact us</a>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <div>
+                <p><strong>Nubian Express</strong></p>
+                <p>&copy; 2026 Nubian Express &nbsp;|&nbsp; All Rights Reserved</p>
+            </div>
+            <p class="site-footer__social">
+                <a href="https://instagram.com/nubianexpress" target="_blank" rel="noopener">Instagram</a> &nbsp;|&nbsp;
+                <a href="https://facebook.com/NubianExpress" target="_blank" rel="noopener">Facebook</a> &nbsp;|&nbsp;
+                <a href="https://tiktok.com/@nubianexpress" target="_blank" rel="noopener">TikTok</a>
+            </p>
+        </div>
     </footer>
 
+    <script src="js/nav.js"></script>
+
+</body>
+
 </html>
-
-
-
-

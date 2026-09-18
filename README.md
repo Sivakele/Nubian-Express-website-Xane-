@@ -1,35 +1,55 @@
-# Nubian-Express-website-Xane-
+# Nubian Express Website
 
-WEDE5020PoE part 1 - Nubian express website
+A responsive website for Nubian Express, a South African uniform manufacturer
 
-Student number: ST10246260
-Sivakele Molapo
-Diploma in Software Development 1
+## Project Structure
 
+```
+nubian-express/
+├── index.html          Home page
+├── about.html          Company background, mission, vision, values
+├── catalogue.html      Product catalogue, services, and cost calculator
+├── reviews.html        Customer testimonials
+├── checkout.html       Order details form and order summary
+├── contact.html        Contact details, message form, and map
+├── css/
+│   └── style.css       Single external stylesheet for the whole site
+├── 
+├── images/              Product, service, and logo images
+└── README.md
+```
 
-Project overview 
+## Design Basis
 
-Website Goals and Objectives
- -The website is built for marketing and exposure. 
- -This website will give the business a platform to form relationships with potetional clients.
- -Nubian Express needs this website to promotion a level of transparency and professionalism, we are answering that need. 
+Built from the *Nubian Express Website Proposal* (August 2026):
 
+- **Positioning:** upper-class, high-end uniform manufacturer — quality, reliability, craftsmanship.
+- **Colour palette:** Gold (accent — headings, highlights, CTAs), Silver (secondary accent — supporting text/detail), Black (primary text and backgrounds), White (backgrounds and negative space).
+- **Typography:** the proposal specifies *Azurite Stockholm* for headings and *Clear Sans* for body copy. Both are paid commercial fonts with no free web licence available, so **Fraunces** (heading) and **Work Sans** (body) are used instead — matching the same premium/legible roles. If a licence for the original fonts is purchased, swap the two `--font-heading` / `--font-body` values in `css/style.css`.
+- **Pages/features:** mapped directly from the proposal's feature table — Home, About, Contact, Catalogue (with cost calculator), Reviews, Checkout.
 
-Key Features and functionality 
--see part 5 of proposal.
+## Responsive Breakpoints
 
+| Breakpoint | Width | Behaviour |
+|---|---|---|
+| Mobile (default) | up to 767px | Single-column layout, collapsible hamburger menu |
+| Tablet | from 768px (`48em`) | Two-column grids, horizontal nav bar |
+| Desktop | from 1024px (`64em`) | Three-column grids, wider type scale |
 
-Timeline and Milestones 
--See part 7 of proposal 
+## Features
 
-sitemap( hierarchy)
--See part 4 of proposal
+- External stylesheet (`css/style.css`) linked on every page, using CSS custom properties as design tokens.
+- CSS Grid and Flexbox for layout, including a named-area (`grid-template-areas`) layout on the contact and checkout pages.
+- Pseudo-classes (`:hover`, `:focus`, `:focus-visible`, `:active`, `:focus-within`) on all interactive elements for visible feedback and keyboard accessibility.
+- `srcset`/responsive image markup and `loading="lazy"` on product and service images.
+- A live cost calculator (`js/calculator.js`) that recalculates an order estimate as the user changes product, quantity, and branding options, including a bulk-order discount.
+- A checkout form that displays an on-page confirmation on submit (no backend/payment processor is included — out of scope for this assignment).
+- `prefers-reduced-motion` and print media queries for accessibility and printability.
 
-References
-Reference List
-Infinity Impressions (n.d.) Infinity Impressions: Custom Screen Printing, Embroidery & Promotional Products. Available at: https://www.infinityimpressions.com/ (Accessed: 14 August 2026).
+## How to View
 
-VectorPortal (n.d.) Soccer jersey vector template.eps. Available at: https://vectorportal.com/vector/soccer-jersey-vector-template.eps/4988 (Accessed: 14 August 2026).
+Open `index.html` in a browser, or serve the folder with any static file server. All internal links are relative, so the folder can be moved or hosted as-is.
 
-WorldwideTradeX (n.d.) Digital Printing Supply. Available at: https://worldwidetradex.com/es/supply/digital-printing (Accessed: 14 August 2026).
+## Testing
 
+Tested in Chrome DevTools responsive mode at approximately 390px (mobile), 768px (tablet), and 1440px (desktop). Screenshots of each breakpoint are included in this README/submission as required by the brief.
