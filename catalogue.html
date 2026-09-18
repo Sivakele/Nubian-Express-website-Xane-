@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue - Nubian Express</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a href="index.html" class="site-header__logo">
+                <img src="images/Logo colour.jpeg" alt="Nubian Express logo" width="120" height="120">
+                Nubian Express
+            </a>
+
+            <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+                <span class="sr-only">Menu</span>
+            </button>
+
+            <nav class="site-nav" id="site-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="catalogue.html" aria-current="page">Catalogue</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="page-intro">
+            <h1>Our Catalogue</h1>
+            <p class="lead">Browse our range of custom uniforms and kits, available for bulk order with your choice of size, colour, and branding.</p>
+        </section>
+
+        <!-- Cost calculator -->
+        <section class="calculator" aria-labelledby="calculator-heading">
+            <h2 id="calculator-heading">Cost Calculator</h2>
+            <p>Get an instant estimate. Choose a product and quantity below &mdash; orders of 50 units or more receive an automatic 10% bulk discount.</p>
+
+            <div class="calculator__grid">
+                <form class="order-form" id="calculator-form">
+                    <div class="field">
+                        <label for="calc-product">Product</label>
+                        <select id="calc-product" name="product">
+                            <option value="450">Soccer Kit &mdash; R450.00 each</option>
+                            <option value="850">Staff Uniform &mdash; R850.00 each</option>
+                            <option value="620">School Uniform Set &mdash; R620.00 each</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="calc-quantity">Quantity</label>
+                        <input type="number" id="calc-quantity" name="quantity" min="1" value="15">
+                    </div>
+
+                    <div class="field">
+                        <label for="calc-branding">Add embroidery / branding (+R45 per item)</label>
+                        <select id="calc-branding" name="branding">
+                            <option value="0">No branding</option>
+                            <option value="45">Add embroidery</option>
+                        </select>
+                    </div>
+                </form>
+
+                <div class="calculator__result" aria-live="polite">
+                    <span class="eyebrow">Estimated total</span>
+                    <p class="price" id="calc-total">R6 750.00</p>
+                    <p class="calculator__note" id="calc-breakdown">15 items at R450.00 each, no bulk discount applied.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid">
+
+            <!-- Product 1 -->
+            <article class="card">
+                <div class="card__media">
+                    <img src="Images/pinkKit.jpeg" alt="Pink soccer kit" width="800" height="800" loading="lazy">
+                </div>
+                <div class="card__body">
+                    <h3 class="card__title">Pink Soccer Kit</h3>
+                    <p class="price">R450.00 each</p>
+
+                    <form class="order-form">
+                        <div class="field">
+                            <label for="size-pink">Select size</label>
+                            <select id="size-pink" name="size">
+                                <option value="">Choose a size</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="colour-pink">Select colour</label>
+                            <select id="colour-pink" name="colour">
+                                <option value="">Choose a colour</option>
+                                <option value="pink">Pink</option>
+                                <option value="red">Red</option>
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                                <option value="blue">Blue</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="quantity-pink">Quantity (minimum 15)</label>
+                            <input type="number" id="quantity-pink" name="quantity" min="15" value="15">
+                        </div>
+                        <button type="submit">Add to cart</button>
+                    </form>
+                </div>
+            </article>
+
+            <!-- Product 2 -->
+            <article class="card">
+                <div class="card__media">
+                    <img src="Images/redkit.jpeg" alt="Red soccer kit" width="800" height="800" loading="lazy">
+                </div>
+                <div class="card__body">
+                    <h3 class="card__title">Red Soccer Kit</h3>
+                    <p class="price">R450.00 each</p>
+
+                    <form class="order-form">
+                        <div class="field">
+                            <label for="size-red">Select size</label>
+                            <select id="size-red" name="size">
+                                <option value="">Choose a size</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="colour-red">Select colour</label>
+                            <select id="colour-red" name="colour">
+                                <option value="">Choose a colour</option>
+                                <option value="pink">Pink</option>
+                                <option value="red">Red</option>
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                                <option value="blue">Blue</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="quantity-red">Quantity (minimum 15)</label>
+                            <input type="number" id="quantity-red" name="quantity" min="15" value="15">
+                        </div>
+                        <button type="submit">Add to cart</button>
+                    </form>
+                </div>
+            </article>
+
+            <!-- Product 3 -->
+            <article class="card">
+                <div class="card__media">
+                    <img src="Images/BlackandWhiteUniform.jpeg" alt="Black and white staff uniform" width="800" height="800" loading="lazy">
+                </div>
+                <div class="card__body">
+                    <h3 class="card__title">Black and White Staff Uniform</h3>
+                    <p class="price">R850.00 each</p>
+
+                    <form class="order-form">
+                        <div class="field">
+                            <label for="size-staff">Select size</label>
+                            <select id="size-staff" name="size">
+                                <option value="">Choose a size</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="colour-staff">Select colour</label>
+                            <select id="colour-staff" name="colour">
+                                <option value="">Choose a colour</option>
+                                <option value="pink">Pink</option>
+                                <option value="red">Red</option>
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                                <option value="blue">Blue</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="quantity-staff">Quantity (minimum 5)</label>
+                            <input type="number" id="quantity-staff" name="quantity" min="5" value="5">
+                        </div>
+                        <button type="submit">Add to cart</button>
+                    </form>
+                </div>
+            </article>
+
+        </div>
+
+        <section class="section" style="margin-top: var(--space-6);">
+            <h2>Our Services</h2>
+            <p>Every uniform can be finished with the branding technique that suits your fabric and budget.</p>
+
+            <div class="grid">
+
+                <article class="card">
+                    <div class="card__media">
+                        <img src="Images/shellLogoEmbroidery.jpeg" alt="Embroidered logo on a work shirt" width="800" height="800" loading="lazy">
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">Embroidery</h3>
+                        <p>Premium logo and text embroidery for corporate wear, workwear, and school uniforms, offering a durable, professional finish that lasts wash after wash.</p>
+                        <p><em>Quotation on enquiry</em></p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__media">
+                        <img src="Images/warehouseBranding.jpeg" alt="Warehouse screen printing production line" width="800" height="800" loading="lazy">
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">Screen Printing</h3>
+                        <p>Industrial screen printing production for high-volume orders, delivering crisp, consistent branding across large runs.</p>
+                        <p><em>Quotation on enquiry</em></p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__media">
+                        <img src="Images/colourfulSkull.jpeg" alt="Colourful design printed with direct-to-film" width="800" height="800" loading="lazy">
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">DTF Printing</h3>
+                        <p>Direct-to-film printing for vibrant, full-colour designs on a wide range of fabrics, ideal for detailed logos, graphics, and custom artwork.</p>
+                        <p><em>Quotation on enquiry</em></p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__media">
+                        <img src="images/sublimation.png" alt="Sublimation printed sportswear" width="800" height="800" loading="lazy">
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">Sublimation</h3>
+                        <p>Full-colour, edge-to-edge dye printing that becomes part of the fabric itself, perfect for sportswear and custom apparel with bold, long-lasting designs.</p>
+                        <p><em>Quotation on enquiry</em></p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__media">
+                        <img src="Images/yellowMockUp.png" alt="Uniform design mock-up" width="800" height="800" loading="lazy">
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">Consultancy and Design</h3>
+                        <p>Expert guidance on uniform design, fabric selection, and branding, helping your business or school develop a look that reflects its identity.</p>
+                        <p><em>Quotation on enquiry</em></p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="cta">
+            <div>
+                <h2>Need something custom?</h2>
+                <p>Contact us for bespoke colours, branding, and bulk pricing tailored to your organisation.</p>
+            </div>
+            <a href="contact.html" class="btn btn--accent">Request a custom quote</a>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <div>
+                <p><strong>Nubian Express</strong></p>
+                <p>&copy; 2026 Nubian Express &nbsp;|&nbsp; All Rights Reserved</p>
+            </div>
+            <p class="site-footer__social">
+                <a href="https://instagram.com/nubianexpress" target="_blank" rel="noopener">Instagram</a> &nbsp;|&nbsp;
+                <a href="https://facebook.com/NubianExpress" target="_blank" rel="noopener">Facebook</a> &nbsp;|&nbsp;
+                <a href="https://tiktok.com/@nubianexpress" target="_blank" rel="noopener">TikTok</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/nav.js"></script>
+    <script src="js/calculator.js"></script>
+
+</body>
+
+</html>

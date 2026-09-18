@@ -1,62 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <p>
-             <img src="images/Logo colour.jpeg"  
-                 alt="Nubian express logo"
-                 width="120">
-        </p>
-
-    <title>About Us - Nubian Express</title>
+    <title>Nubian Express | Quality Uniform Manufacturing</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    <h1>Welcome to Nubian Express</h1>
+    <header class="site-header">
+        <div class="site-header__inner">
 
-    <p>At Nubian Express, we are committed to providing high-quality, professional uniforms designed to meet the needs of businesses, schools, organisations, and teams. We believe that a uniform is more than just clothing — it represents identity, professionalism, unity, and pride.</p>
+            <a href="index.html" class="site-header__logo">
+                <img src="images/Logo colour.jpeg" alt="Nubian Express logo" width="120" height="120">
+                Nubian Express
+            </a>
 
-    <p>Our manufacturing approach combines quality materials, careful craftsmanship, and attention to detail to produce uniforms that are comfortable, durable, and suitable for everyday use. From corporate and workwear uniforms to school, hospitality, healthcare, security, and customised apparel, we strive to deliver products that meet our customers' specific requirements.</p>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+                <span class="sr-only">Menu</span>
+            </button>
 
-    <p>We understand that every organisation is unique. That's why we work closely with our clients to provide customised solutions, from fabric and colours to designs, branding, embroidery, and finishing.</p>
+            <nav class="site-nav" id="site-nav">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-    <p><strong>At Nubian Express, our goal is simple: to deliver reliable, quality uniforms that help our customers look professional and feel confident.</strong></p>
+        </div>
+    </header>
 
-    <h2>Our Commitment</h2>
+    <main>
 
-    <p>We are dedicated to:</p>
+        <section class="hero">
+            <p class="eyebrow" style="color: var(--gold);">Uniform manufacturing &mdash; schools &amp; corporations</p>
+            <h1>Uniforms built on quality, reliability, and craftsmanship.</h1>
+            <p class="lead">Nubian Express manufactures high-quality, professional uniforms for businesses, schools, organisations, and teams across South Africa &mdash; combining premium materials with careful craftsmanship on every order.</p>
+            <a href="catalogue.html" class="btn btn--accent">Browse the catalogue</a>
+        </section>
 
+        <section class="section">
+            <h2>Identity, professionalism, unity</h2>
+            <p>At Nubian Express, we believe a uniform is more than just clothing &mdash; it represents identity, professionalism, unity, and pride. Our manufacturing approach combines quality materials, careful craftsmanship, and attention to detail to produce uniforms that are comfortable, durable, and suitable for everyday use.</p>
+            <p>From corporate and workwear uniforms to school, hospitality, healthcare, security, and customised apparel, we work closely with clients on fabric, colours, design, branding, embroidery, and finishing to meet their specific requirements.</p>
+            <p class="statement"><strong>Our goal is simple: to deliver reliable, quality uniforms that help our customers look professional and feel confident.</strong></p>
+        </section>
 
-    
-    <ul>
-        <li>Delivering quality products and workmanship</li>
-        <li>Providing professional and reliable service</li>
-        <li>Offering customisation to suit individual requirements</li>
-        <li>Using durable and comfortable materials</li>
-        <li>Maintaining competitive and fair pricing</li>
-        <li>Building long-term relationships with our customers</li>
-        <p> We prioritize quality</p>
-    </ul>
+        <section class="section">
+            <h2>Our Commitment</h2>
+            <p>We are dedicated to:</p>
+            <ul class="list-columns">
+                <li>Delivering quality products and workmanship</li>
+                <li>Providing professional and reliable service</li>
+                <li>Offering customisation to suit individual requirements</li>
+                <li>Using durable and comfortable materials</li>
+                <li>Maintaining competitive and fair pricing</li>
+                <li>Building long-term relationships with our customers</li>
+                <li>Prioritising quality in everything we produce</li>
+            </ul>
+        </section>
 
-    <p><strong>Whether you need uniforms for a small team or a large organisation, Nubian Express is ready to bring your vision to life.</strong></p>
+        <section class="cta">
+            <div>
+                <h2>Ready to kit out your team?</h2>
+                <p>Tell us what you need and we will put together a quote &mdash; or use our cost calculator to get an instant estimate.</p>
+            </div>
+            <a href="contact.html" class="btn btn--accent">Contact us</a>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <div>
+                <p><strong>Nubian Express</strong></p>
+                <p>&copy; 2026 Nubian Express &nbsp;|&nbsp; All Rights Reserved</p>
+            </div>
+            <p class="site-footer__social">
+                <a href="https://instagram.com/nubianexpress" target="_blank" rel="noopener">Instagram</a> &nbsp;|&nbsp;
+                <a href="https://facebook.com/NubianExpress" target="_blank" rel="noopener">Facebook</a> &nbsp;|&nbsp;
+                <a href="https://tiktok.com/@nubianexpress" target="_blank" rel="noopener">TikTok</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/nav.js"></script>
 
 </body>
 
-   <footer>
-
-        <p>
-            <strong>VVV</strong>
-        </p>
-
-
-
-<hr>
-        <p>
-            &copy; 2026 VVV
-            &nbsp; | &nbsp;
-            All Rights Reserved
-        </p>
-
-    </footer> 
-
+</html>

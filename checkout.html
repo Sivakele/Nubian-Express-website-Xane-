@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Nubian Express</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a href="index.html" class="site-header__logo">
+                <img src="images/Logo colour.jpeg" alt="Nubian Express logo" width="120" height="120">
+                Nubian Express
+            </a>
+
+            <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+                <span class="sr-only">Menu</span>
+            </button>
+
+            <nav class="site-nav" id="site-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="checkout.html" aria-current="page">Checkout</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="page-intro">
+            <h1>Checkout</h1>
+            <p class="lead">Confirm your order details below. A member of our team will contact you to arrange payment and delivery.</p>
+        </section>
+
+        <div class="checkout-layout">
+
+            <section class="checkout-layout__details">
+                <h2>Your Details</h2>
+
+                <form class="order-form" id="checkout-form">
+                    <div class="field">
+                        <label for="checkout-name">Name and surname</label>
+                        <input type="text" id="checkout-name" name="checkoutname" placeholder="Enter your name and surname" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="checkout-email">Email</label>
+                        <input type="email" id="checkout-email" name="checkoutemail" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="checkout-org">Organisation (school, business, or team)</label>
+                        <input type="text" id="checkout-org" name="checkoutorg" placeholder="Enter your organisation's name">
+                    </div>
+
+                    <div class="field">
+                        <label for="checkout-address">Delivery address</label>
+                        <textarea id="checkout-address" name="checkoutaddress" rows="4" placeholder="Enter your delivery address" required></textarea>
+                    </div>
+
+                    <div class="field">
+                        <label for="checkout-notes">Order notes (sizes, colours, branding)</label>
+                        <textarea id="checkout-notes" name="checkoutnotes" rows="4" placeholder="Any special instructions for your order"></textarea>
+                    </div>
+
+                    <button type="submit">Place order</button>
+                </form>
+
+                <div class="confirmation" id="checkout-confirmation" role="status">
+                    <h3>Order received</h3>
+                    <p>Thank you &mdash; your order request has been noted. A member of the Nubian Express team will contact you shortly to confirm details and arrange payment.</p>
+                </div>
+            </section>
+
+            <section class="checkout-layout__summary">
+                <h2>Order Summary</h2>
+
+                <div class="summary-panel">
+                    <table class="summary-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Item</th>
+                                <th scope="col">Qty</th>
+                                <th scope="col">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pink Soccer Kit</td>
+                                <td>15</td>
+                                <td>R6 750.00</td>
+                            </tr>
+                            <tr>
+                                <td>Embroidery add-on</td>
+                                <td>15</td>
+                                <td>R675.00</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">Estimated total</td>
+                                <td>R7 425.00</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <p class="calculator__note">This summary reflects items added from the catalogue page. Final pricing is confirmed by our team once your order is reviewed.</p>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <div>
+                <p><strong>Nubian Express</strong></p>
+                <p>&copy; 2026 Nubian Express &nbsp;|&nbsp; All Rights Reserved</p>
+            </div>
+            <p class="site-footer__social">
+                <a href="https://instagram.com/nubianexpress" target="_blank" rel="noopener">Instagram</a> &nbsp;|&nbsp;
+                <a href="https://facebook.com/NubianExpress" target="_blank" rel="noopener">Facebook</a> &nbsp;|&nbsp;
+                <a href="https://tiktok.com/@nubianexpress" target="_blank" rel="noopener">TikTok</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/nav.js"></script>
+    <script src="js/checkout.js"></script>
+
+</body>
+
+</html>
