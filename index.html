@@ -1,62 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ZA">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nubian Express | Quality Uniform Manufacturing</title>
+
+    <!-- SEO: unique title and description for this page -->
+    <title>Uniform Manufacturer in Polokwane | Nubian Express</title>
+    <meta name="description" content="Nubian Express makes quality school, corporate and sports uniforms in Polokwane, Limpopo, with embroidery, printing and custom branding for orders of any size.">
+    <link rel="canonical" href="https://sivakele.github.io/Nubian-Express-website-Xane-/">
+
+    <!-- Social sharing previews (Facebook, WhatsApp, LinkedIn, X) -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Nubian Express">
+    <meta property="og:locale" content="en_ZA">
+    <meta property="og:title" content="Uniform Manufacturer in Polokwane | Nubian Express">
+    <meta property="og:description" content="Nubian Express makes quality school, corporate and sports uniforms in Polokwane, Limpopo, with embroidery, printing and custom branding for orders of any size.">
+    <meta property="og:url" content="https://sivakele.github.io/Nubian-Express-website-Xane-/">
+    <meta property="og:image" content="https://sivakele.github.io/Nubian-Express-website-Xane-/images/nubian-express-share.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="theme-color" content="#111111">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Fonts: preconnect first so the font files start downloading sooner -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js" defer></script>
+
+    <!-- Structured data: gives search engines the business name, address, phone
+         and social profiles in a machine-readable format (local SEO). -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://sivakele.github.io/Nubian-Express-website-Xane-/#business",
+        "name": "Nubian Express",
+        "description": "Uniform manufacturer for schools, businesses, organisations and sports teams, offering embroidery, screen printing, DTF printing, sublimation and uniform design.",
+        "url": "https://sivakele.github.io/Nubian-Express-website-Xane-/",
+        "logo": "https://sivakele.github.io/Nubian-Express-website-Xane-/images/nubian-express-logo.jpg",
+        "image": "https://sivakele.github.io/Nubian-Express-website-Xane-/images/nubian-express-share.jpg",
+        "telephone": "+27692101984",
+        "email": "nubianexpress@gmail.com",
+        "priceRange": "R450 - R850 per item",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "15 Euphorbia Street, Flora Park",
+            "addressLocality": "Polokwane",
+            "addressRegion": "Limpopo",
+            "postalCode": "0699",
+            "addressCountry": "ZA"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -23.909288,
+            "longitude": 29.490519
+        },
+        "areaServed": "South Africa",
+        "sameAs": [
+            "https://instagram.com/nubianexpress",
+            "https://facebook.com/NubianExpress",
+            "https://tiktok.com/@nubianexpress"
+        ]
+    }
+    </script>
 </head>
 
 <body>
+
+    <a class="skip-link" href="#main">Skip to main content</a>
 
     <header class="site-header">
         <div class="site-header__inner">
 
             <a href="index.html" class="site-header__logo">
-                <img src="images/Logo colour.jpeg" alt="Nubian Express logo" width="120" height="120">
+                <picture>
+                    <source srcset="images/nubian-express-logo.webp" type="image/webp">
+                    <img src="images/nubian-express-logo.jpg" alt="" width="48" height="48">
+                </picture>
                 Nubian Express
             </a>
 
-            <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
                 <span class="nav-toggle__bar"></span>
                 <span class="nav-toggle__bar"></span>
                 <span class="nav-toggle__bar"></span>
                 <span class="sr-only">Menu</span>
             </button>
 
-            <nav class="site-nav" id="site-nav">
+            <nav class="site-nav" id="site-nav" aria-label="Main">
                 <ul>
                     <li><a href="index.html" aria-current="page">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="catalogue.html">Catalogue</a></li>
                     <li><a href="reviews.html">Reviews</a></li>
-                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="enquiries.html">Enquiries</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li><a href="checkout.html">Checkout <span class="cart-count" data-cart-count hidden>0</span><span class="sr-only"> (items in your order)</span></a></li>
                 </ul>
             </nav>
 
         </div>
     </header>
 
-    <main>
+    <main id="main">
 
         <section class="hero">
-            <p class="eyebrow" style="color: var(--gold);">Uniform manufacturing &mdash; schools &amp; corporations</p>
-            <h1>Uniforms built on quality, reliability, and craftsmanship.</h1>
-            <p class="lead">Nubian Express manufactures high-quality, professional uniforms for businesses, schools, organisations, and teams across South Africa &mdash; combining premium materials with careful craftsmanship on every order.</p>
-            <a href="catalogue.html" class="btn btn--accent">Browse the catalogue</a>
+            <p class="eyebrow">Uniform manufacturing &mdash; Polokwane, Limpopo</p>
+            <h1>Quality uniforms for schools, businesses and teams in Polokwane</h1>
+            <p class="lead">Nubian Express manufactures professional uniforms for businesses, schools, organisations and sports teams across South Africa &mdash; combining premium materials with careful craftsmanship on every order.</p>
+            <div class="hero__actions">
+                <a href="catalogue.html" class="btn btn--accent">Browse uniforms and prices</a>
+                <a href="enquiries.html" class="btn btn--light">Request a custom quote</a>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="what-we-make">
+            <h2 id="what-we-make">What we make</h2>
+            <div class="grid">
+
+                <article class="card">
+                    <div class="card__media">
+                        <picture>
+                            <source srcset="images/pink-soccer-kit.webp" type="image/webp">
+                            <img src="images/pink-soccer-kit.jpg" alt="Pink soccer kit with matching shirt and shorts" width="600" height="800">
+                        </picture>
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">Sports kits</h3>
+                        <p>Soccer kits and team wear in your club or school colours, from R450 per kit.</p>
+                        <a class="card__link" href="catalogue.html">See our soccer kits</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__media">
+                        <picture>
+                            <source srcset="images/black-and-white-staff-uniform.webp" type="image/webp">
+                            <img src="images/black-and-white-staff-uniform.jpg" alt="Black and white corporate staff uniform" width="600" height="800" loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">Corporate and staff uniforms</h3>
+                        <p>Smart, durable workwear for offices, retail, hospitality, healthcare and security teams.</p>
+                        <a class="card__link" href="catalogue.html">View staff uniforms</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__media">
+                        <picture>
+                            <source srcset="images/embroidered-logo-work-shirt.webp" type="image/webp">
+                            <img src="images/embroidered-logo-work-shirt.jpg" alt="Close-up of a company logo embroidered on a work shirt" width="554" height="554" loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">Branding and printing</h3>
+                        <p>Embroidery, screen printing, DTF printing and sublimation to put your logo on every garment.</p>
+                        <a class="card__link" href="catalogue.html#services">Explore our branding services</a>
+                    </div>
+                </article>
+
+            </div>
         </section>
 
         <section class="section">
             <h2>Identity, professionalism, unity</h2>
             <p>At Nubian Express, we believe a uniform is more than just clothing &mdash; it represents identity, professionalism, unity, and pride. Our manufacturing approach combines quality materials, careful craftsmanship, and attention to detail to produce uniforms that are comfortable, durable, and suitable for everyday use.</p>
-            <p>From corporate and workwear uniforms to school, hospitality, healthcare, security, and customised apparel, we work closely with clients on fabric, colours, design, branding, embroidery, and finishing to meet their specific requirements.</p>
+            <p>From corporate and workwear uniforms to school, hospitality, healthcare, security, and customised apparel, we work closely with clients on fabric, colours, design, branding, embroidery, and finishing to meet their specific requirements. <a href="about.html">Read how Nubian Express started</a>.</p>
             <p class="statement"><strong>Our goal is simple: to deliver reliable, quality uniforms that help our customers look professional and feel confident.</strong></p>
         </section>
 
         <section class="section">
-            <h2>Our Commitment</h2>
+            <h2>How ordering works</h2>
+            <ol class="feature-steps">
+                <li>
+                    <h3>Choose your uniforms</h3>
+                    <p>Browse the catalogue and use the cost calculator for an instant estimate.</p>
+                </li>
+                <li>
+                    <h3>Tell us about your branding</h3>
+                    <p>Send an enquiry with your logo, colours, sizes and quantities.</p>
+                </li>
+                <li>
+                    <h3>Receive your quote</h3>
+                    <p>We confirm pricing, fabric and finishing before production starts.</p>
+                </li>
+                <li>
+                    <h3>Production and delivery</h3>
+                    <p>Your uniforms are made, quality-checked and delivered to you.</p>
+                </li>
+            </ol>
+        </section>
+
+        <section class="section">
+            <h2>Our commitment</h2>
             <p>We are dedicated to:</p>
             <ul class="list-columns">
                 <li>Delivering quality products and workmanship</li>
@@ -72,28 +213,52 @@
         <section class="cta">
             <div>
                 <h2>Ready to kit out your team?</h2>
-                <p>Tell us what you need and we will put together a quote &mdash; or use our cost calculator to get an instant estimate.</p>
+                <p>Tell us what you need and we will put together a quote &mdash; or use our cost calculator for an instant estimate.</p>
             </div>
-            <a href="contact.html" class="btn btn--accent">Contact us</a>
+            <a href="enquiries.html" class="btn btn--accent">Request a uniform quote</a>
         </section>
 
     </main>
 
     <footer class="site-footer">
         <div class="site-footer__inner">
+
             <div>
                 <p><strong>Nubian Express</strong></p>
-                <p>&copy; 2026 Nubian Express &nbsp;|&nbsp; All Rights Reserved</p>
+                <p>Quality uniforms for schools, businesses and teams &mdash; based in Polokwane, Limpopo.</p>
+                <address>
+                    15 Euphorbia Street, Flora Park, Polokwane, 0699<br>
+                    <a href="tel:+27692101984">069 210 1984</a><br>
+                    <a href="mailto:nubianexpress@gmail.com">nubianexpress@gmail.com</a>
+                </address>
             </div>
-            <p class="site-footer__social">
-                <a href="https://instagram.com/nubianexpress" target="_blank" rel="noopener">Instagram</a> &nbsp;|&nbsp;
-                <a href="https://facebook.com/NubianExpress" target="_blank" rel="noopener">Facebook</a> &nbsp;|&nbsp;
-                <a href="https://tiktok.com/@nubianexpress" target="_blank" rel="noopener">TikTok</a>
-            </p>
-        </div>
-    </footer>
 
-    <script src="js/nav.js"></script>
+            <nav aria-label="Footer">
+                <p class="site-footer__heading">Explore</p>
+                <ul>
+                    <li><a href="catalogue.html">Uniform catalogue</a></li>
+                    <li><a href="catalogue.html#services">Branding services</a></li>
+                    <li><a href="enquiries.html">Request a quote</a></li>
+                    <li><a href="about.html">Our story</a></li>
+                    <li><a href="reviews.html">Customer reviews</a></li>
+                    <li><a href="contact.html">Contact and directions</a></li>
+                </ul>
+            </nav>
+
+            <div>
+                <p class="site-footer__heading">Follow us</p>
+                <ul>
+                    <li><a href="https://instagram.com/nubianexpress" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    <li><a href="https://facebook.com/NubianExpress" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                    <li><a href="https://tiktok.com/@nubianexpress" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+                    <li><a href="https://wa.me/27692101984" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <p class="site-footer__legal">&copy; <span data-year>2026</span> Nubian Express &nbsp;|&nbsp; All Rights Reserved</p>
+    </footer>
 
 </body>
 

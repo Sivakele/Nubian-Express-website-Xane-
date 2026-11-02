@@ -1,0 +1,9 @@
+# robots.txt for the Nubian Express website
+# This is a small public site, so every crawler may visit every page.
+# The checkout page uses a <meta name="robots" content="noindex"> tag instead
+# of a Disallow rule, so crawlers can still read that instruction.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://sivakele.github.io/Nubian-Express-website-Xane-/sitemap.xml

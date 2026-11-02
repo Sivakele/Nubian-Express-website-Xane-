@@ -1,43 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ZA">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout - Nubian Express</title>
+
+    <!-- SEO: unique title and description for this page -->
+    <title>Checkout | Review Your Uniform Order | Nubian Express</title>
+    <meta name="description" content="Review the uniforms in your Nubian Express order, check the estimated total and send your delivery details so our team can confirm payment and delivery.">
+    <link rel="canonical" href="https://sivakele.github.io/Nubian-Express-website-Xane-/checkout.html">
+    <meta name="robots" content="noindex, follow">
+
+    <!-- Social sharing previews (Facebook, WhatsApp, LinkedIn, X) -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Nubian Express">
+    <meta property="og:locale" content="en_ZA">
+    <meta property="og:title" content="Checkout | Review Your Uniform Order | Nubian Express">
+    <meta property="og:description" content="Review the uniforms in your Nubian Express order, check the estimated total and send your delivery details so our team can confirm payment and delivery.">
+    <meta property="og:url" content="https://sivakele.github.io/Nubian-Express-website-Xane-/checkout.html">
+    <meta property="og:image" content="https://sivakele.github.io/Nubian-Express-website-Xane-/images/nubian-express-share.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="theme-color" content="#111111">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Fonts: preconnect first so the font files start downloading sooner -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
 
+    <a class="skip-link" href="#main">Skip to main content</a>
+
     <header class="site-header">
         <div class="site-header__inner">
+
             <a href="index.html" class="site-header__logo">
-                <img src="images/Logo colour.jpeg" alt="Nubian Express logo" width="120" height="120">
+                <picture>
+                    <source srcset="images/nubian-express-logo.webp" type="image/webp">
+                    <img src="images/nubian-express-logo.jpg" alt="" width="48" height="48">
+                </picture>
                 Nubian Express
             </a>
 
-            <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
                 <span class="nav-toggle__bar"></span>
                 <span class="nav-toggle__bar"></span>
                 <span class="nav-toggle__bar"></span>
                 <span class="sr-only">Menu</span>
             </button>
 
-            <nav class="site-nav" id="site-nav">
+            <nav class="site-nav" id="site-nav" aria-label="Main">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="catalogue.html">Catalogue</a></li>
                     <li><a href="reviews.html">Reviews</a></li>
-                    <li><a href="checkout.html" aria-current="page">Checkout</a></li>
+                    <li><a href="enquiries.html">Enquiries</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li><a href="checkout.html" aria-current="page">Checkout <span class="cart-count" data-cart-count hidden>0</span><span class="sr-only"> (items in your order)</span></a></li>
                 </ul>
             </nav>
+
         </div>
     </header>
 
-    <main>
+    <main id="main">
 
         <section class="page-intro">
             <h1>Checkout</h1>
@@ -46,49 +79,62 @@
 
         <div class="checkout-layout">
 
-            <section class="checkout-layout__details">
-                <h2>Your Details</h2>
+            <section class="checkout-layout__details" aria-labelledby="details-heading">
+                <h2 id="details-heading">Your details</h2>
+                <p class="form-hint">Fields marked <span class="required">*</span> are required. No payment is taken on this website.</p>
 
-                <form class="order-form" id="checkout-form">
+                <form class="order-form" id="checkout-form" data-confirmation="checkout-confirmation" novalidate>
+
                     <div class="field">
-                        <label for="checkout-name">Name and surname</label>
-                        <input type="text" id="checkout-name" name="checkoutname" placeholder="Enter your name and surname" required>
+                        <label for="checkout-name">Name and surname <span class="required" aria-hidden="true">*</span></label>
+                        <input type="text" id="checkout-name" name="name" data-label="Name and surname" placeholder="Enter your name and surname" required autocomplete="name">
                     </div>
 
                     <div class="field">
-                        <label for="checkout-email">Email</label>
-                        <input type="email" id="checkout-email" name="checkoutemail" placeholder="Enter your email" required>
+                        <label for="checkout-email">Email <span class="required" aria-hidden="true">*</span></label>
+                        <input type="email" id="checkout-email" name="email" data-label="Email" placeholder="you@example.com" required autocomplete="email">
+                    </div>
+
+                    <div class="field">
+                        <label for="checkout-phone">Phone number <span class="required" aria-hidden="true">*</span></label>
+                        <input type="tel" id="checkout-phone" name="phone" data-label="Phone number" placeholder="e.g. 069 210 1984" required autocomplete="tel" pattern="\+?[0-9 ]{10,}" data-pattern-message="Please enter a phone number with at least 10 digits, e.g. 069 210 1984.">
                     </div>
 
                     <div class="field">
                         <label for="checkout-org">Organisation (school, business, or team)</label>
-                        <input type="text" id="checkout-org" name="checkoutorg" placeholder="Enter your organisation's name">
+                        <input type="text" id="checkout-org" name="organisation" data-label="Organisation (school, business, or team)" placeholder="Enter your organisation's name" autocomplete="organization">
                     </div>
 
                     <div class="field">
-                        <label for="checkout-address">Delivery address</label>
-                        <textarea id="checkout-address" name="checkoutaddress" rows="4" placeholder="Enter your delivery address" required></textarea>
+                        <label for="checkout-address">Delivery address <span class="required" aria-hidden="true">*</span></label>
+                        <textarea id="checkout-address" name="address" data-label="Delivery address" rows="4" placeholder="Enter your delivery address" required autocomplete="street-address"></textarea>
                     </div>
 
                     <div class="field">
                         <label for="checkout-notes">Order notes (sizes, colours, branding)</label>
-                        <textarea id="checkout-notes" name="checkoutnotes" rows="4" placeholder="Any special instructions for your order"></textarea>
+                        <textarea id="checkout-notes" name="notes" data-label="Order notes (sizes, colours, branding)" rows="4" placeholder="Any special instructions for your order"></textarea>
                     </div>
 
-                    <button type="submit">Place order</button>
+                    <button type="submit">Prepare my order</button>
                 </form>
 
                 <div class="confirmation" id="checkout-confirmation" role="status">
-                    <h3>Order received</h3>
-                    <p>Thank you &mdash; your order request has been noted. A member of the Nubian Express team will contact you shortly to confirm details and arrange payment.</p>
+                    <h3>Your order is ready to send</h3>
+                    <p>Thank you! Send it to us by email or WhatsApp &mdash; the message already lists your items and details. A member of the Nubian Express team will contact you to confirm and arrange payment.</p>
+                    <div class="confirmation__actions">
+                        <a class="btn btn--accent" data-send="email" href="mailto:nubianexpress@gmail.com">Send by email</a>
+                        <a class="btn" data-send="whatsapp" href="https://wa.me/27692101984" target="_blank" rel="noopener noreferrer">Send on WhatsApp</a>
+                        <button type="button" class="btn btn--outline" data-edit-form="checkout-form">Edit my details</button>
+                    </div>
                 </div>
             </section>
 
-            <section class="checkout-layout__summary">
-                <h2>Order Summary</h2>
+            <section class="checkout-layout__summary" aria-labelledby="summary-heading">
+                <h2 id="summary-heading">Order summary</h2>
 
                 <div class="summary-panel">
                     <table class="summary-table">
+                        <caption class="sr-only">Items in your order</caption>
                         <thead>
                             <tr>
                                 <th scope="col">Item</th>
@@ -96,26 +142,17 @@
                                 <th scope="col">Price</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>Pink Soccer Kit</td>
-                                <td>15</td>
-                                <td>R6 750.00</td>
-                            </tr>
-                            <tr>
-                                <td>Embroidery add-on</td>
-                                <td>15</td>
-                                <td>R675.00</td>
-                            </tr>
+                        <tbody id="summary-body" aria-live="polite">
+                            <tr><td colspan="3" class="summary-empty">Your order is empty. <a href="catalogue.html">Browse the uniform catalogue</a> to add items.</td></tr>
                         </tbody>
                         <tfoot>
                             <tr>
                                 <td colspan="2">Estimated total</td>
-                                <td>R7 425.00</td>
+                                <td id="summary-total">R0.00</td>
                             </tr>
                         </tfoot>
                     </table>
-                    <p class="calculator__note">This summary reflects items added from the catalogue page. Final pricing is confirmed by our team once your order is reviewed.</p>
+                    <p class="calculator__note">Orders of 50 units or more receive a 10% bulk discount. Final pricing is confirmed by our team once your order is reviewed.</p>
                 </div>
             </section>
 
@@ -125,20 +162,43 @@
 
     <footer class="site-footer">
         <div class="site-footer__inner">
+
             <div>
                 <p><strong>Nubian Express</strong></p>
-                <p>&copy; 2026 Nubian Express &nbsp;|&nbsp; All Rights Reserved</p>
+                <p>Quality uniforms for schools, businesses and teams &mdash; based in Polokwane, Limpopo.</p>
+                <address>
+                    15 Euphorbia Street, Flora Park, Polokwane, 0699<br>
+                    <a href="tel:+27692101984">069 210 1984</a><br>
+                    <a href="mailto:nubianexpress@gmail.com">nubianexpress@gmail.com</a>
+                </address>
             </div>
-            <p class="site-footer__social">
-                <a href="https://instagram.com/nubianexpress" target="_blank" rel="noopener">Instagram</a> &nbsp;|&nbsp;
-                <a href="https://facebook.com/NubianExpress" target="_blank" rel="noopener">Facebook</a> &nbsp;|&nbsp;
-                <a href="https://tiktok.com/@nubianexpress" target="_blank" rel="noopener">TikTok</a>
-            </p>
-        </div>
-    </footer>
 
-    <script src="js/nav.js"></script>
-    <script src="js/checkout.js"></script>
+            <nav aria-label="Footer">
+                <p class="site-footer__heading">Explore</p>
+                <ul>
+                    <li><a href="catalogue.html">Uniform catalogue</a></li>
+                    <li><a href="catalogue.html#services">Branding services</a></li>
+                    <li><a href="enquiries.html">Request a quote</a></li>
+                    <li><a href="about.html">Our story</a></li>
+                    <li><a href="reviews.html">Customer reviews</a></li>
+                    <li><a href="contact.html">Contact and directions</a></li>
+                </ul>
+            </nav>
+
+            <div>
+                <p class="site-footer__heading">Follow us</p>
+                <ul>
+                    <li><a href="https://instagram.com/nubianexpress" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    <li><a href="https://facebook.com/NubianExpress" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                    <li><a href="https://tiktok.com/@nubianexpress" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+                    <li><a href="https://wa.me/27692101984" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <p class="site-footer__legal">&copy; <span data-year>2026</span> Nubian Express &nbsp;|&nbsp; All Rights Reserved</p>
+    </footer>
 
 </body>
 

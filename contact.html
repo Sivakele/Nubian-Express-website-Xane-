@@ -1,57 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ZA">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Nubian Express</title>
-  <link rel="stylesheet" href="css/style.css">
+
+    <!-- SEO: unique title and description for this page -->
+    <title>Contact Us | Nubian Express, Flora Park, Polokwane</title>
+    <meta name="description" content="Contact Nubian Express at 15 Euphorbia Street, Flora Park, Polokwane. Call or WhatsApp 069 210 1984, email us, or send a message using our contact form.">
+    <link rel="canonical" href="https://sivakele.github.io/Nubian-Express-website-Xane-/contact.html">
+
+    <!-- Social sharing previews (Facebook, WhatsApp, LinkedIn, X) -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Nubian Express">
+    <meta property="og:locale" content="en_ZA">
+    <meta property="og:title" content="Contact Us | Nubian Express, Flora Park, Polokwane">
+    <meta property="og:description" content="Contact Nubian Express at 15 Euphorbia Street, Flora Park, Polokwane. Call or WhatsApp 069 210 1984, email us, or send a message using our contact form.">
+    <meta property="og:url" content="https://sivakele.github.io/Nubian-Express-website-Xane-/contact.html">
+    <meta property="og:image" content="https://sivakele.github.io/Nubian-Express-website-Xane-/images/nubian-express-share.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="theme-color" content="#111111">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Fonts: preconnect first so the font files start downloading sooner -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js" defer></script>
+
+    <!-- Structured data: gives search engines the business name, address, phone
+         and social profiles in a machine-readable format (local SEO). -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://sivakele.github.io/Nubian-Express-website-Xane-/#business",
+        "name": "Nubian Express",
+        "description": "Uniform manufacturer for schools, businesses, organisations and sports teams, offering embroidery, screen printing, DTF printing, sublimation and uniform design.",
+        "url": "https://sivakele.github.io/Nubian-Express-website-Xane-/",
+        "logo": "https://sivakele.github.io/Nubian-Express-website-Xane-/images/nubian-express-logo.jpg",
+        "image": "https://sivakele.github.io/Nubian-Express-website-Xane-/images/nubian-express-share.jpg",
+        "telephone": "+27692101984",
+        "email": "nubianexpress@gmail.com",
+        "priceRange": "R450 - R850 per item",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "15 Euphorbia Street, Flora Park",
+            "addressLocality": "Polokwane",
+            "addressRegion": "Limpopo",
+            "postalCode": "0699",
+            "addressCountry": "ZA"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -23.909288,
+            "longitude": 29.490519
+        },
+        "areaServed": "South Africa",
+        "sameAs": [
+            "https://instagram.com/nubianexpress",
+            "https://facebook.com/NubianExpress",
+            "https://tiktok.com/@nubianexpress"
+        ]
+    }
+    </script>
 </head>
 
 <body>
 
+    <a class="skip-link" href="#main">Skip to main content</a>
+
     <header class="site-header">
         <div class="site-header__inner">
+
             <a href="index.html" class="site-header__logo">
-                <img src="images/Logo colour.jpeg" alt="Nubian Express logo" width="120" height="120">
+                <picture>
+                    <source srcset="images/nubian-express-logo.webp" type="image/webp">
+                    <img src="images/nubian-express-logo.jpg" alt="" width="48" height="48">
+                </picture>
                 Nubian Express
             </a>
 
-            <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
                 <span class="nav-toggle__bar"></span>
                 <span class="nav-toggle__bar"></span>
                 <span class="nav-toggle__bar"></span>
                 <span class="sr-only">Menu</span>
             </button>
 
-            <nav class="site-nav" id="site-nav">
+            <nav class="site-nav" id="site-nav" aria-label="Main">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="catalogue.html">Catalogue</a></li>
                     <li><a href="reviews.html">Reviews</a></li>
-                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="enquiries.html">Enquiries</a></li>
                     <li><a href="contact.html" aria-current="page">Contact</a></li>
+                    <li><a href="checkout.html">Checkout <span class="cart-count" data-cart-count hidden>0</span><span class="sr-only"> (items in your order)</span></a></li>
                 </ul>
             </nav>
+
         </div>
     </header>
 
-    <main>
+    <main id="main">
 
         <section class="page-intro">
-            <h1>Contact Us</h1>
-            <p class="lead">We would love to hear from you.</p>
+            <h1>Contact Nubian Express</h1>
+            <p class="lead">We would love to hear from you. Call, WhatsApp, email or visit us in Flora Park, Polokwane &mdash; or, if you already know what you need, <a href="enquiries.html">request a uniform quote</a>.</p>
         </section>
 
         <div class="contact-layout">
 
             <section class="contact-layout__details contact-details">
-                <h2>Get in Touch</h2>
+                <h2>Get in touch</h2>
 
                 <p>
                     <strong>Address:</strong><br>
-                    15 Euphorbia Street, Polokwane, 0699
+                    15 Euphorbia Street, Flora Park, Polokwane, 0699
                 </p>
 
                 <p>
@@ -61,7 +130,7 @@
 
                 <p>
                     <strong>WhatsApp:</strong><br>
-                    <a href="https://wa.me/27692101984" target="_blank" rel="noopener">069 210 1984</a>
+                    <a href="https://wa.me/27692101984" target="_blank" rel="noopener noreferrer">Message us on WhatsApp (069 210 1984)</a>
                 </p>
 
                 <p>
@@ -71,37 +140,48 @@
 
                 <p>
                     <strong>Follow us:</strong><br>
-                    <a href="https://instagram.com/nubianexpress" target="_blank" rel="noopener">Instagram</a><br>
-                    <a href="https://facebook.com/NubianExpress" target="_blank" rel="noopener">Facebook</a><br>
-                    <a href="https://tiktok.com/@nubianexpress" target="_blank" rel="noopener">TikTok</a>
+                    <a href="https://instagram.com/nubianexpress" target="_blank" rel="noopener noreferrer">Nubian Express on Instagram</a><br>
+                    <a href="https://facebook.com/NubianExpress" target="_blank" rel="noopener noreferrer">Nubian Express on Facebook</a><br>
+                    <a href="https://tiktok.com/@nubianexpress" target="_blank" rel="noopener noreferrer">Nubian Express on TikTok</a>
                 </p>
             </section>
 
             <section class="contact-layout__form">
-                <h2>Send a Message</h2>
+                <h2>Send a message</h2>
 
-                <form class="order-form">
+                <form class="order-form" id="contact-form" data-handoff="Website message" data-confirmation="contact-confirmation" novalidate>
+
                     <div class="field">
-                        <label for="contactname">Name and surname</label>
-                        <input type="text" id="contactname" name="contactname" placeholder="Enter your name and surname" required>
+                        <label for="contact-name">Name and surname <span class="required" aria-hidden="true">*</span></label>
+                        <input type="text" id="contact-name" name="name" data-label="Name and surname" placeholder="Enter your name and surname" required autocomplete="name">
                     </div>
 
                     <div class="field">
-                        <label for="contactemail">Email</label>
-                        <input type="email" id="contactemail" name="contactemail" placeholder="Enter your email" required>
+                        <label for="contact-email">Email <span class="required" aria-hidden="true">*</span></label>
+                        <input type="email" id="contact-email" name="email" data-label="Email" placeholder="you@example.com" required autocomplete="email">
                     </div>
 
                     <div class="field">
-                        <label for="contactmessage">Message</label>
-                        <textarea id="contactmessage" name="contactmessage" rows="6" placeholder="Enter your message" required></textarea>
+                        <label for="contact-message">Message <span class="required" aria-hidden="true">*</span></label>
+                        <textarea id="contact-message" name="message" data-label="Message" rows="6" placeholder="Enter your message" required minlength="10"></textarea>
                     </div>
 
-                    <button type="submit">Send message</button>
+                    <button type="submit">Prepare my message</button>
                 </form>
+
+                <div class="confirmation" id="contact-confirmation" role="status">
+                    <h3>Your message is ready</h3>
+                    <p>Choose how you would like to send it &mdash; your email app or WhatsApp will open with your message already written.</p>
+                    <div class="confirmation__actions">
+                        <a class="btn btn--accent" data-send="email" href="mailto:nubianexpress@gmail.com">Send by email</a>
+                        <a class="btn" data-send="whatsapp" href="https://wa.me/27692101984" target="_blank" rel="noopener noreferrer">Send on WhatsApp</a>
+                        <button type="button" class="btn btn--outline" data-edit-form="contact-form">Edit my details</button>
+                    </div>
+                </div>
             </section>
 
             <section class="contact-layout__map">
-                <h2>Find Us</h2>
+                <h2>Find us</h2>
                 <p>We are located at 15 Euphorbia Street, Flora Park, Polokwane.</p>
 
                 <div class="map-frame">
@@ -120,19 +200,43 @@
 
     <footer class="site-footer">
         <div class="site-footer__inner">
+
             <div>
                 <p><strong>Nubian Express</strong></p>
-                <p>&copy; 2026 Nubian Express &nbsp;|&nbsp; All Rights Reserved</p>
+                <p>Quality uniforms for schools, businesses and teams &mdash; based in Polokwane, Limpopo.</p>
+                <address>
+                    15 Euphorbia Street, Flora Park, Polokwane, 0699<br>
+                    <a href="tel:+27692101984">069 210 1984</a><br>
+                    <a href="mailto:nubianexpress@gmail.com">nubianexpress@gmail.com</a>
+                </address>
             </div>
-            <p class="site-footer__social">
-                <a href="https://instagram.com/nubianexpress" target="_blank" rel="noopener">Instagram</a> &nbsp;|&nbsp;
-                <a href="https://facebook.com/NubianExpress" target="_blank" rel="noopener">Facebook</a> &nbsp;|&nbsp;
-                <a href="https://tiktok.com/@nubianexpress" target="_blank" rel="noopener">TikTok</a>
-            </p>
-        </div>
-    </footer>
 
-    <script src="js/nav.js"></script>
+            <nav aria-label="Footer">
+                <p class="site-footer__heading">Explore</p>
+                <ul>
+                    <li><a href="catalogue.html">Uniform catalogue</a></li>
+                    <li><a href="catalogue.html#services">Branding services</a></li>
+                    <li><a href="enquiries.html">Request a quote</a></li>
+                    <li><a href="about.html">Our story</a></li>
+                    <li><a href="reviews.html">Customer reviews</a></li>
+                    <li><a href="contact.html">Contact and directions</a></li>
+                </ul>
+            </nav>
+
+            <div>
+                <p class="site-footer__heading">Follow us</p>
+                <ul>
+                    <li><a href="https://instagram.com/nubianexpress" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    <li><a href="https://facebook.com/NubianExpress" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                    <li><a href="https://tiktok.com/@nubianexpress" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+                    <li><a href="https://wa.me/27692101984" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <p class="site-footer__legal">&copy; <span data-year>2026</span> Nubian Express &nbsp;|&nbsp; All Rights Reserved</p>
+    </footer>
 
 </body>
 

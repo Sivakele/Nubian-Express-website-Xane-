@@ -1,208 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+
 <head>
-<link rel= "stylesheet" href="css/style.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <!-- SEO: unique title and description for this page -->
+    <title>Request a Uniform Quote | Nubian Express Enquiries</title>
+    <meta name="description" content="Request a quote for school, corporate or sports uniforms from Nubian Express in Polokwane. Share your quantity, branding and deadline for pricing.">
+    <link rel="canonical" href="https://sivakele.github.io/Nubian-Express-website-Xane-/enquiries.html">
 
-    <title>Nubian Express | Contact</title>
+    <!-- Social sharing previews (Facebook, WhatsApp, LinkedIn, X) -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Nubian Express">
+    <meta property="og:locale" content="en_ZA">
+    <meta property="og:title" content="Request a Uniform Quote | Nubian Express Enquiries">
+    <meta property="og:description" content="Request a quote for school, corporate or sports uniforms from Nubian Express in Polokwane. Share your quantity, branding and deadline for pricing.">
+    <meta property="og:url" content="https://sivakele.github.io/Nubian-Express-website-Xane-/enquiries.html">
+    <meta property="og:image" content="https://sivakele.github.io/Nubian-Express-website-Xane-/images/nubian-express-share.jpg">
+    <meta name="twitter:card" content="summary_large_image">
 
+    <meta name="theme-color" content="#111111">
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
+    <!-- Fonts: preconnect first so the font files start downloading sooner -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
 
-    <header>
+    <a class="skip-link" href="#main">Skip to main content</a>
 
-        <p>
-             <img src="images/Logo colour.jpeg"  
-                 alt="Nubian express logo"
-                 width="120">
-        </p>
+    <header class="site-header">
+        <div class="site-header__inner">
 
-        <h1>Contact Us</h1>
+            <a href="index.html" class="site-header__logo">
+                <picture>
+                    <source srcset="images/nubian-express-logo.webp" type="image/webp">
+                    <img src="images/nubian-express-logo.jpg" alt="" width="48" height="48">
+                </picture>
+                Nubian Express
+            </a>
 
-        <p>
-            <em>We would love to hear from you.</em>
-        </p>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+                <span class="sr-only">Menu</span>
+            </button>
 
-        <hr>
+            <nav class="site-nav" id="site-nav" aria-label="Main">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="enquiries.html" aria-current="page">Enquiries</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="checkout.html">Checkout <span class="cart-count" data-cart-count hidden>0</span><span class="sr-only"> (items in your order)</span></a></li>
+                </ul>
+            </nav>
 
+        </div>
     </header>
 
-    <nav>
+    <main id="main">
 
-        <p>
-            <a href="index.html">Home</a>
-            &nbsp; | &nbsp;
-            <a href="index.html">About</a>
-            &nbsp; | &nbsp;
-            <a href="product.html">Products</a>
-            &nbsp; | &nbsp;
-            <a href="enquiry.html">Enquiry</a>
-            &nbsp; | &nbsp;
-            <a href="contact.html">Contact</a>
-        </p>
-
-    </nav>
-
-    <hr>
->
-
-    <main>
-
-        <!-- Contact Details -->
-        <section>
-
-            <h2>Get in Touch</h2>
-
-            <p>
-                <strong>Address:</strong>
-                <br>
-                15 Euphorbia Street, Polokwane. 0699
-            </p>
-
-            <p>
-                <strong>Telephone:</strong>
-                <br>
-
-                <a href="tel:+27692101984">
-                    069 210 1984
-                </a>
-            </p>
-
-            <p>
-                <strong>Email:</strong>
-                <br>
-
-                <a href="mailto:nubianexpress@gmail.com">
-                    nubianexpress@gmail.com
-                </a>
-            </p>
-               <p>Instagram: <a href="https://instagram.com/nubianexpress" target="_blank">@nubianexpress</a></p>
-            <p>Facebook: <a href="https://facebook.com/NubianExpress" target="_blank">Nubian Express</a></p>
-             <p>TikTok: <a href="https://tiktok.com/@nubianexpress" target="_blank">@nubianexpress</a></p>
-
-
+        <section class="page-intro">
+            <h1>Request a custom uniform quote</h1>
+            <p class="lead">Tell us what your school, business or team needs and we will come back to you with pricing, fabric options and timelines.</p>
         </section>
 
-        <hr>
-       <!-- Contact Form -->
-        <section>
+        <div class="checkout-layout checkout-layout--enquiry">
 
-            <h2>Contact Form</h2>
+            <section class="checkout-layout__details" aria-labelledby="enquiry-heading">
+                <h2 id="enquiry-heading">Your enquiry</h2>
+                <p class="form-hint">Fields marked <span class="required">*</span> are required.</p>
 
-            <form>
+                <form class="order-form" id="enquiry-form" data-handoff="Uniform quote request" data-confirmation="enquiry-confirmation" novalidate>
 
-                <p>
+                    <div class="field">
+                        <label for="enquiry-name">Name and surname <span class="required" aria-hidden="true">*</span></label>
+                        <input type="text" id="enquiry-name" name="name" data-label="Name and surname" placeholder="e.g. Thandi Mokoena" required autocomplete="name">
+                    </div>
 
-                    <label for="contactname">
-                        Name and surname:
-                    </label>
+                    <div class="field">
+                        <label for="enquiry-email">Email <span class="required" aria-hidden="true">*</span></label>
+                        <input type="email" id="enquiry-email" name="email" data-label="Email" placeholder="you@example.com" required autocomplete="email">
+                    </div>
 
-                    <br>
+                    <div class="field">
+                        <label for="enquiry-phone">Phone number</label>
+                        <input type="tel" id="enquiry-phone" name="phone" data-label="Phone number" placeholder="e.g. 069 210 1984" autocomplete="tel" pattern="\+?[0-9 ]{10,}" data-pattern-message="Please enter a phone number with at least 10 digits, e.g. 069 210 1984.">
+                    </div>
 
-                    <input type="text"
-                           id="contactname"
-                           name="contactname"
-                           placeholder="Enter your name and Surname">
+                    <div class="field">
+                        <label for="enquiry-org">Organisation</label>
+                        <input type="text" id="enquiry-org" name="organisation" data-label="Organisation" placeholder="School, business or team name" autocomplete="organization">
+                    </div>
 
-                </p>
+                    <div class="field">
+                        <label for="enquiry-type">Uniform type <span class="required" aria-hidden="true">*</span></label>
+                        <select id="enquiry-type" name="type" data-label="Uniform type" required>
+                            <option value="">Choose a uniform type</option>
+                            <option value="school">School uniforms</option>
+                            <option value="corporate">Corporate / staff uniforms</option>
+                            <option value="sports">Sports kits</option>
+                            <option value="hospitality">Hospitality uniforms</option>
+                            <option value="healthcare">Healthcare uniforms</option>
+                            <option value="security">Security uniforms</option>
+                            <option value="other">Something else</option>
+                        </select>
+                    </div>
 
-                <p>
+                    <div class="field">
+                        <label for="enquiry-quantity">Approximate quantity <span class="required" aria-hidden="true">*</span></label>
+                        <input type="number" id="enquiry-quantity" name="quantity" data-label="Approximate quantity" placeholder="e.g. 50" required min="1" step="1">
+                    </div>
 
-                    <label for="contactemail">
-                        Email:
-                    </label>
+                    <fieldset class="field">
+                        <legend>Branding you are interested in</legend>
+                        <div class="checkbox-list">
+                            <label><input type="checkbox" name="branding" value="Embroidery" data-label="Branding"> Embroidery</label>
+                            <label><input type="checkbox" name="branding" value="Screen printing" data-label="Branding"> Screen printing</label>
+                            <label><input type="checkbox" name="branding" value="DTF printing" data-label="Branding"> DTF printing</label>
+                            <label><input type="checkbox" name="branding" value="Sublimation" data-label="Branding"> Sublimation</label>
+                            <label><input type="checkbox" name="branding" value="Design consultancy" data-label="Branding"> Design consultancy</label>
+                        </div>
+                    </fieldset>
 
-                    <br>
+                    <div class="field">
+                        <label for="enquiry-date">Date you need the uniforms by</label>
+                        <input type="date" id="enquiry-date" name="date" data-label="Date you need the uniforms by" placeholder="">
+                    </div>
 
-                    <input type="email"
-                           id="contactemail"
-                           name="contactemail"
-                           placeholder="Enter your email">
+                    <div class="field">
+                        <label for="enquiry-details">Tell us more <span class="required" aria-hidden="true">*</span></label>
+                        <textarea id="enquiry-details" name="details" data-label="Tell us more" rows="5" placeholder="Colours, sizes, logo details, delivery location..." required minlength="10"></textarea>
+                    </div>
 
-                </p>
+                    <button type="submit">Prepare my quote request</button>
+                </form>
 
-                <p>
+                <div class="confirmation" id="enquiry-confirmation" role="status">
+                    <h3>Your quote request is ready</h3>
+                    <p>Thank you! Choose how you would like to send it &mdash; your email app or WhatsApp will open with your details already filled in. We usually reply within one to two working days.</p>
+                    <div class="confirmation__actions">
+                        <a class="btn btn--accent" data-send="email" href="mailto:nubianexpress@gmail.com">Send by email</a>
+                        <a class="btn" data-send="whatsapp" href="https://wa.me/27692101984" target="_blank" rel="noopener noreferrer">Send on WhatsApp</a>
+                        <button type="button" class="btn btn--outline" data-edit-form="enquiry-form">Edit my details</button>
+                    </div>
+                </div>
+            </section>
 
-                    <label for="contactmessage">
-                        Message:
-                    </label>
+            <aside class="checkout-layout__summary info-panel" aria-labelledby="next-heading">
+                <h2 id="next-heading">What happens next?</h2>
+                <ol>
+                    <li>We review your requirements and may contact you to confirm sizes or artwork.</li>
+                    <li>You receive a written quote with pricing, fabric options and timelines.</li>
+                    <li>Once you approve the quote, production begins.</li>
+                </ol>
+                <p>Want a rough figure first? Try the <a href="catalogue.html#calculator-heading">uniform cost calculator</a>.</p>
+                <p><strong>Prefer to talk?</strong><br>
+                    Call <a href="tel:+27692101984">069 210 1984</a> or email <a href="mailto:nubianexpress@gmail.com">nubianexpress@gmail.com</a>.</p>
+            </aside>
 
-                    <br>
+        </div>
 
-                    <textarea id="contactmessage"
-                              name="contactmessage"
-                              rows="6"
-                              cols="50"
-                              placeholder="Enter your message"></textarea>
-
-                </p>
-
-                <p>
-
-                    <button type="submit">
-                        Send Message
-                    </button>
-
-                </p>
-
-            </form>
-
-        </section>
-
-
-
-
-
-        <!-- Map -->
-        <section>
-
-            <h2>Find Us</h2>
-
-            <p>
-                We are located at 15 Euphorbia street, Flora Park. Polokwane
-            </p>
-
-            <!-- Google Maps Embed -->
-  <iframe
-
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455.93063600090954!2d29.490519479570587!3d-23.909288318037035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec6d75bf5b0100b%3A0x960ae8f36cfac17f!2s15%20Euphorbia%20Ave%2C%20Flora%20Park%2C%20Polokwane%2C%200699!5e0!3m2!1sen!2sza!4v1786697121674!5m2!1sen!2sza" 
-  width="600" 
-  height="450" 
-  style="border:0;" 
-  allowfullscreen=""
-   loading="lazy" 
-  referrerpolicy="strict-origin-when-cross-origin">
-
-  
-</iframe>
-                
-               
-
-        </section>
-
-        <hr>
-
- 
     </main>
 
+    <footer class="site-footer">
+        <div class="site-footer__inner">
 
+            <div>
+                <p><strong>Nubian Express</strong></p>
+                <p>Quality uniforms for schools, businesses and teams &mdash; based in Polokwane, Limpopo.</p>
+                <address>
+                    15 Euphorbia Street, Flora Park, Polokwane, 0699<br>
+                    <a href="tel:+27692101984">069 210 1984</a><br>
+                    <a href="mailto:nubianexpress@gmail.com">nubianexpress@gmail.com</a>
+                </address>
+            </div>
 
-    <footer>
+            <nav aria-label="Footer">
+                <p class="site-footer__heading">Explore</p>
+                <ul>
+                    <li><a href="catalogue.html">Uniform catalogue</a></li>
+                    <li><a href="catalogue.html#services">Branding services</a></li>
+                    <li><a href="enquiries.html">Request a quote</a></li>
+                    <li><a href="about.html">Our story</a></li>
+                    <li><a href="reviews.html">Customer reviews</a></li>
+                    <li><a href="contact.html">Contact and directions</a></li>
+                </ul>
+            </nav>
 
-        <p>
-            <strong>VVV</strong>
-        </p>
+            <div>
+                <p class="site-footer__heading">Follow us</p>
+                <ul>
+                    <li><a href="https://instagram.com/nubianexpress" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    <li><a href="https://facebook.com/NubianExpress" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                    <li><a href="https://tiktok.com/@nubianexpress" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+                    <li><a href="https://wa.me/27692101984" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                </ul>
+            </div>
 
+        </div>
 
-        <p>
-            &copy; 2026 VVV
-            &nbsp; | &nbsp;
-            All Rights Reserved
-        </p>
-
+        <p class="site-footer__legal">&copy; <span data-year>2026</span> Nubian Express &nbsp;|&nbsp; All Rights Reserved</p>
     </footer>
 
 </body>
